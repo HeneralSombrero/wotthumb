@@ -1,0 +1,199 @@
+.panel {
+    margin: 0 0 20px;
+    clear: left;
+    position: relative;
+    overflow-x: hidden;
+}
+/* .list {
+    overflow: hidden;
+    margin-right: -15px;
+    margin-top: -15px;
+} */
+.list_item {
+    float: left;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.thumb {
+    float: left;
+    position: relative;
+    background-color: #000;
+    border: 1px solid rgba(255, 255, 255, 1);
+    width: 160px;
+    height: 102px;
+}
+
+/* flag config */
+/* HERE YOU CHANGE THE FLAG BY CHANGING THE URL LINK IN THE background: url(--change it with given flags/custom one--) */
+.b-description .thumb .thumb_flag, .thumb_flag {
+    width: 160px;
+    height: 102px;
+    background: url(images/flags.png) no-repeat 0 0;
+    opacity: .5;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    -webkit-transition: all 0.2s ease-out 0.1s;
+    transition: all 0.2s ease-out 0.1s;
+}
+/* OR SELECT FROM THE FOLLOWING LIST AND ADD IT TO THE HTML FILE AS INSTRUCTED */
+/* THIS IS ALREADY EMBED SO ONLY WORKS WITH THE CURRENT FLAGS.PNG */
+.flag_ussr {
+    background-position: 0 -100px;
+}
+.flag_china {
+    background-position: 0 -200px;
+}
+.flag_france {
+    background-position: 0 -300px;
+}
+.flag_japan {
+    background-position: 0 -400px;
+}
+.flag_uk {
+    background-position: 0 -500px;
+}
+.flag_germany {
+    background-position: 0 -600px;
+}
+.flag_czech {
+    background-position: 0 -700px;
+}
+.flag_sweden {
+    background-position: 0 -800px;
+}
+.flag_italy {
+    background-position: 0 -900px;
+}
+.flag_poland {
+    background-position: 0 -1000px;
+}
+
+.thumb_vehicle {
+    position: relative;
+    z-index: 2;
+}
+.thumb_link {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+/* for tech tree tanks */
+.thumb_class {
+    display: inline-block;
+    height: 23px;
+    font: bold 12px / 23px Arial, Helvetica, sans-serif;
+    color: #bdbaac;
+    text-shadow: 0 0 2px rgba(0,0,0,0.9);
+    -webkit-transition: all 0.2s ease-out 0.1s;
+    transition: all 0.2s ease-out 0.1s;
+}
+/* name config */
+.thumb_name {
+    padding: 0 0 0 5px;
+    height: 14px;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    margin: 3px 5px 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #bababa;
+    position: relative;
+    z-index: 4;
+    -webkit-transition: all 0.2s ease-out 0.1s;
+    transition: all 0.2s ease-out 0.1s;
+}
+.thumb_name_premium {
+    color: #fe881f;
+}
+
+/* TANK CLASSES AND THEIR RESPECTIVE DIVs* */
+
+/* for light tanks/fighters (tech, prem) */
+.light {
+    background-position: 0 -229px;
+}
+.light-premium {
+    background-position: 0 0;
+}
+
+/* for medium tanks/heavy fighters (tech, prem) */
+.medium {
+    background-position: 0 -252px;
+}
+.medium-premium {
+    background-position: 0 -23px;
+}
+
+/* for heavy tanks (tech, prem) */
+.heavy {
+    background-position: 0 -275px;
+}
+.heavy-premium {
+    background-position: 0 -45px;
+}
+
+/* for tank destroyers/attack aircrafts (tech, prem) */
+.attack {
+    background-position: 0 -297px;
+}
+.attack-premium {
+    background-position: 0 -69px;
+}
+
+/* for artilleries (tech, prem) */
+.arta {
+    background-position: 0 -320px;
+}
+.arta-premium {
+    background-position: 0 -92px;
+}
+
+/* for multirole fighters (tech, prem) */
+.multirole {
+    background-position: 0 -345px;
+}
+.multirole-premium {
+    background-position: 0 -116px;
+}
+
+/* for bombers (tech, prem) */
+.bomber {
+    background-position: 0 -499px;
+}
+.bomber-premium {
+    background-position: 0 -472px;
+}
+
+/* WG website tank class reference image */
+.thumb_type {
+    display: inline-block;
+    width: 24px;
+    height: 23px;
+    vertical-align: top;
+    background-image: url(images/b-description-icons.png);
+}
+
+/* vehicle image config */
+.thumb_vehicle img {
+    opacity: 0.8;
+    -webkit-transition: all 0.2s ease-out 0.1s;
+    transition: all 0.2s ease-out 0.1s;
+}
+.b-user-generated img {
+    max-width: 100%;
+}
+.thumb_blank {
+    width: 160px;
+    height: 102px;
+}
+img {
+    vertical-align: middle;
+}
